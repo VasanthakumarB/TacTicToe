@@ -1,0 +1,25 @@
+
+<aura:component controller="TestCreateJob" implements="force:hasRecordId,force:lightningQuickAction" >
+    <aura:attribute name="recordId" type="String"/>
+    <div class="slds-page-header">
+        Information
+    </div>
+    <div>
+        <lightning:select label="Job Category" aura:id="JobField1" required="true">
+            <option value="">--None--</option>
+            <option value="Service">Service</option>
+            <option value="Installation">Installation</option>
+            <option value="Call Out">Call Out</option>
+            <option value="Training">Training</option>
+        </lightning:select>
+        <lightning:input type="DateTime" label="Planned Date and Time" aura:id="JobField2" required="true"/>   
+        <lightning:select label="Urgency" aura:id="JobField3" required="true">
+        <option value="">--None--</option>
+        <option value="Normal">Normal</option>
+        <option value="High">High</option>
+        <option value="Urgency">Urgency</option>
+        </lightning:select>
+    </div>
+    <br/>
+    <lightning:button label="Save" variant="brand" onclick="{!c.JobSave}"/>
+</aura:component>
