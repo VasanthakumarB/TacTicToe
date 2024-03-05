@@ -1,8 +1,24 @@
 <!DOCTYPE html>
 <head>
 <title>Welcome</title>
+<script>
+function getName(){
+    var name=document.Test.User.value;
+    if(name==null || name==""){
+        alert("Please Fill Required Fields");
+        return false;
+    }else{
+        document.write("Hi "+name);
+        return true;
+    }
+}
+</script>
 </head>
 <body>
+    <form name="Test">
     <h1>Welcome My World</h1>
+    <label>UserName</label><input type="Text" name="User" placeholder="Enter the your name"/>
+    <input type="Submit" value="Ok" onclick="return getName();"/>
+    </form>
 </body>
 </html>
