@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Table</title>
+    <style>
+        th{
+            background-color: orangered;
+        }
+        .table{
+            display: table;
+            width: 600px;
+            margin-top: 50px;
+            margin-left: 100px ;
+        }
+        .row{/*tr*/
+            display: table-row;
+        }
+        .col{ /*td*/
+            display: table-cell;
+            padding: 10px 40px;
+            border: 1px solid orangered;
+        }
+        .head{/*th*/
+            display: table-header-group;
+            font-weight: bold;
+            font-size: 20px;
+            background-color: orangered ;
+            text-align: center;
+            color:white;
+        }
+        .footer{
+            display: table-footer-group;
+        }
+        .rowspan{
+            display: table-row-group;
+            color: rgb(14, 13, 13);
+        }
+        .caption{
+            display: table-caption;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 15px;
+            color: brown;
+        }
+        .col-group{
+            display: table-column-group;
+            background-color:  greenyellow;
+        }
+        .tbl-col{
+            display: table-column;
+            background-color:  greenyellow;
+        }
+        .col2{
+            width: 30px;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <table width="50%"
+    border="1px"
+    cellpadding="10px"
+    cellspacing="10px">
+        <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Company Name</th>
+        <th>Position</th>
+        <th>Specialist</th>
+    </tr>
+    <tr>
+        <td>Vasanthakumar B</td>
+        <td>23</td>
+        <td>Merfantz Techonigies</td>
+        <td>App Developer</td>
+        <td>6 months</td>
+    </tr>
+    <tr>
+        <td>Praveen Kumar </td>
+        <td>24</td>
+        <td>Merfantz Techonigies</td>
+        <td>Software Developer</td>
+        <td>2 Year</td>
+    </tr>
+    <tr>
+        <td>Sathish </td>
+        <td>23</td>
+        <td>Merfantz Techonigies</td>
+        <td>Software Developer</td>
+        <td>2 Year</td>
+    </tr>
+    </table>
+    <div class="table">
+        <div class="caption">Vasathakumar Just Create Table In div Tag</div>
+        <div class="col-group">
+        <div class="tbl-col">col1</div>
+        <div class="tbl-col col2">col2</div>
+        <div class="tbl-col">col3</div>
+        <div class="tbl-col">col4</div>
+        <div class="tbl-col">col5</div>
+        </div>
+        <div class="head">
+        <div class="row">
+            <div class="col">Name</div>
+            <div class="col">Age</div>
+            <div class="col">Company Name</div>
+            <div class="col">Position</div>
+            <div class="col">Specialist</div>
+        </div>
+    </div>
+    <div class="rowspan">
+        <div class="row">
+            <div class="col">Vasanthakumar B</div>
+            <div class="col">23</div>
+            <div class="col">Merfantz Techonigies</div>
+            <div class="col">App Developer</div>
+            <div class="col">6 months</div>
+        </div>
+        <div class="row">
+            <div class="col">Balaji</div>
+            <div class="col">23</div>
+            <div class="col">Crytons Techonigies</div>
+            <div class="col">Software Developer</div>
+            <div class="col">2 Year</div>
+        </div>
+        <div class="row">
+            <div class="col">Praveen Kumar</div>
+            <div class="col">23</div>
+            <div class="col">Vcare </div>
+            <div class="col">Ethical Hacker</div>
+            <div class="col">2 Year</div>
+        </div>
+        <div class="row">
+            <div class="col">Chranjeevi</div>
+            <div class="col">23</div>
+            <div class="col">TCS</div>
+            <div class="col">Software Developer</div>
+            <div class="col">2 Year</div>
+        </div>
+    </div>
+        <div class="footer">
+            <div class="row">
+                <div class="col">Total Number Of Friends</div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col">5</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
