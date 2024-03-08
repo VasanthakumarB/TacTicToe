@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(blue pink);
+            background-size: cover;
+            background-image: url("Naruto.jpeg");
+                height: 100%;
+                background-blend-mode: overlay;
+                display: grid;
+                place-items: center;
+        }
+        .title{
+            font-weight: bolder;
+            font-size: 32px;
+            color:white;
+        }
+        .login{
+            background: linear-gradient(blue,pink);
+            width: 60vmin;
+            height: 50vmin;
+            margin-left: 400px;
+            padding: 50px;
+            color: white;
+            border-radius: 0px 20px 0px 20px;
+            display: grid;
+            --border-angle: 0turn;
+            --main-bg: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #112 5%,
+      #112 60%,
+      #213 95%
+    );
+            border: solid 5px transparent;
+            border-radius: 2em;
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 25%,blue,pink 99%, transparent);
+  background: 
+  var(--main-bg) padding-box,
+
+  var(--gradient-border) border-box,
+  var(--main-bg) border-box;
+
+    background-position: center center;
+
+    animation: bg-spin 3s linear infinite;
+    @keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+    button:hover {
+    animation-play-state: paused;
+  }
+    }
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
+    .shadow{
+        box-shadow: 10px 10px 10px 5px rgb(0, 0, 0.15);
+        box-shadow: 10px 10px 10px 5px rgb(0, 0, 0.15);
+        box-shadow: 10px 10px 10px 5px rgb(0, 0, 0.15);
+    }
+        input{
+            padding:10px;
+            border-radius: 10px;
+        }
+        .text1{
+            padding:10px;
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+        .text2{
+            padding:10px;
+            margin-top: 20px;
+            margin-left: 45px;
+        }
+        .button{
+            padding:10px;
+            margin-top: 20px;
+            margin-left: 40px;
+           
+        }
+        label{
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <div class="title">
+        <caption>Login Page</caption>
+    </div>
+        <div class="login shadow">
+        <label for="UserName">UserName</label>
+        <input class="text1" type="text" name="Username" placeholder="Enter The UserName">
+        <br>
+        <label for="Password">Password</label>
+        <input class="text2" type="Password" name="Password" placeholder="Enter The Password">
+        <br>
+        <input  class="button" type="submit" value="Login">
+    </div>
+</form>
+</body>
+</html>
