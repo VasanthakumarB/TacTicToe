@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li:first-child{
+            color: red;
+            font-weight: 900;
+        }
+        ul li:last-child{
+            color: blue;
+            font-weight: bolder;
+        }
+        ul li:nth-last-child(2){
+            color:pink;
+        }
+        ul li+{
+            color:orangered;
+        }
+        p:empty{
+            padding: 10px;
+            border: 2px solid goldenrod;
+        }
+       /* :root{
+            --bgcolorblue:blue;
+            --bgcolorred:red;
+            --margin:10px;
+            --height1:100px;
+            --widht1:100px;
+        }
+        .parent{
+            height: 60vh;    
+            width: 50vw;
+            border: 1px solid;
+        }
+        .child{
+            height: var(--height1);
+            width: var(--widht1);
+            margin: var(--margin);
+            background-color: var(--bgcolorred);
+        }*/
+    </style>
+</head>
+<body>
+   <h1>Pesudo Class</h1>
+    <!-- <div class="parent">
+        Root Pesudo Class store value Example
+        <div class="child">
+
+        </div>
+        <div class="child">
+
+        </div>
+    </div>-->
+    <ul>
+        <li>List - 1</li>
+        <li>List - 2</li>
+        <li>List - 3</li>
+        <li>List - 4</li>
+        <li>List - 5</li>
+    </ul>
+    <ul>
+        <li>List - 1</li>
+        <li>List - 2</li>
+        <li>List - 3</li>
+        <li>List - 4</li>
+        <li>List - 5</li>
+    </ul>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa veritatis facere suscipit quaerat illo delectus error adipisci, iure hic, laboriosam autem quis id non quibusdam eaque cumque rem deleniti alias voluptatum odio? Veritatis, voluptates amet nihil saepe dolores temporibus eveniet nulla velit unde odit iste. Asperiores reprehenderit provident excepturi odio?
+    </p>
+    <p></p>
+</body>
+</html>
