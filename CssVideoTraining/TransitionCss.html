@@ -5,22 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{
+        .t1{
             height: 100px;
             width: 100px;
             background: orangered;
             transition-property: width,height,background;
             transition-duration: 0.5s;
         }
-        div:hover{
+        .t1:hover{
             background: yellow;
             height: 300px;
             width: 300px;
         }
+        .t2{
+            height: 100px;
+            width: 100px;
+            background: orangered;
+            transition-property: width,height,background,border;
+            transition-duration: 0.5s;
+        }
+        .t2:hover{
+            height: 100px;
+            width: 300px;
+            background: yellow;
+            border: 5px  solid green;
+        }
     </style>
 </head>
 <body>
-    <div>
+    <div class="t1">
+
+    </div>
+    <div class="t2">
 
     </div>
 </body>
