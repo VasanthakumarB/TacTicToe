@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10%;
+            background-color: gray;
+        }
+        .logo{
+            cursor: pointer;
+            color: white;
+            font-weight: 400;
+        }
+        .nav-link{
+            list-style: none;
+            display: flex;
+        }
+        .nav-link li a{
+            color: white;
+            text-decoration: none;
+            padding: 0 20px;
+            transition: 0.5s;
+
+        }
+        .nav-link li a:hover{
+            color: blue;
+        }
+        button{
+            padding: 9px 25px;
+            background-color: orangered;
+            border-radius: 15px;
+            border: none;
+            color: white;
+        }
+        button:hover{
+            background: rgba(0, 136, 169, 0.8);
+            transition: 0.8s;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2 class="logo">Vasanth@Co</h2>
+    <nav>
+        <ul class="nav-link">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <button>Contact Us</button>
+    </div>
+</body>
+</html>

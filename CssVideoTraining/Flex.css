@@ -1,0 +1,25 @@
+.container{
+    width: 600px;
+    display: flex;
+    border: 1px solid;
+}
+.box{
+    padding: 30px;
+    margin: 10px;
+    background-color: orangered;
+}
+.box:nth-child(1){
+    order: 2;
+}
+.box:nth-child(2){
+    order: 5;
+}
+.box:nth-child(3){
+    order: 4;
+}
+.box:nth-child(4){
+    order: 3;
+}
+.box:nth-child(5){
+    order: 1;
+}
