@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;  
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height:100vh;
+            width:100vw;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            gap:30px;
+            align-items: center;
+            flex-direction: column; 
+            background-color: lightcoral;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+        .txt{
+            padding:10px;
+            border:none;
+            outline: none;
+            border-radius: 3px;
+            border: 1px solid orange;
+
+        }
+        .btn{
+            padding:10px;
+            border-radius: 3px;
+            outline: none;
+            border: none;
+        }
+        .btn:hover{
+            background-color: lightseagreen;
+            color: black;
+            transition: .5s;
+        }
+        .txt:invalid{
+            border:2px solid red;
+            transition: 0.5s;
+        }
+        h5{
+            position: absolute;
+            top: 0;
+            left:42%;
+            font-size: 32px;
+            color: teal;
+        }
+    </style>
+</head>
+<body>
+    <h5>Vasanthakumar</h5>
+    <div>
+    <h1>Else If Statement</h1>
+    <input type="text" class="txt" placeholder="Enter avg value" pattern="[0-9]*">
+    <input type="submit" class="btn" onclick="return elseIfstate();">
+</div>
+<script src="Scripts/Script1.js"></script>
+</body>
+</html>

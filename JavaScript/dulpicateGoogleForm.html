@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            user-select: none;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+           align-items: center;
+        }
+        .form{
+            width: 400px;
+            min-height: 400px;
+            padding: 32px;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        }
+        h5{
+            display: block;
+            border: 2px solid black;
+            position: fix;
+        }
+        .form-title{
+            font-weight: 500;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        .form-group{
+            height:48px;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .form-control{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width:100%;
+            height: 100%;
+            background: none;
+            border: 1px solid #a1a1a1;
+            outline: none;
+            padding: 16px;
+            border-radius: 3px;
+        }
+        .form-label{
+            position: absolute;
+            left: 13px;
+            top:13px;
+            color: #a1a1a1;
+            background-color: white;
+            padding:0.6px;
+            font-size: 16px;
+            transition:.3s;
+        }
+        .form-control:focus+ .form-label{
+            top: -10px;
+            z-index: 10;
+            color: #1866C9;
+        }
+        .form-control:focus{
+            border: 2px solid #1866C9;
+        }
+        .form-control:not(:focus):valid+label{
+            top: -10px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">  
+        <form class="form" action="#">
+            <h5>Google</h5>
+            <h1 class="form-title">Sign In</h1>
+            <div class="form-group">
+                <input type="text" class="form-control" required>
+                <label for="" class="form-label">Email or phone</label>
+            </div>
+            <div class="form-group">
+                <input type="Password" class="form-control" required>
+                <label for="" class="form-label">Enter your Password</label>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
